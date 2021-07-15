@@ -1,0 +1,107 @@
+/*Fuente que se va a usar en toda la pagina*/
+* {
+    font-family: 'Staatliches', cursive;
+}
+
+/*Estilos del cuerpo*/
+body {
+    background-color: rgb(0, 12, 81);
+    color: rgb(1, 175, 255);
+    letter-spacing: 5px;
+}
+
+body header {
+    text-align: center;
+}
+
+/*Estilos del contenedor que tiene a todos los demas elementos*/
+body .general-container {
+    border: 1px solid white;
+    margin: 2.5% 25%;
+    overflow: hidden;
+}
+
+/*Estilos de los campos donde se ingresan los valores para cambiar los radios de los bordes*/
+body .input-box {
+    background-color: rgb(2, 0, 46);
+    border: solid 1px blue;
+    border-radius: 20px;
+    width: 10%;
+    margin: 1%;
+    color: rgb(1, 175, 255);
+    padding: 2%;
+    font-size: 20px;
+    box-shadow: 1px 2px 6px black;
+}
+
+/*Estilos de cada caja individual*/
+body .upper-row {
+    overflow: hidden;
+    margin: 1%;
+}
+
+body #upper-left-side {
+    float: left;
+}
+
+body #upper-right-side {
+    float: right;
+}
+
+body .lower-row {
+    overflow: hidden;
+    margin: 1%;
+}
+
+body #lower-left-side {
+    float: left;
+}
+
+body #lower-right-side {
+    float: right;
+}
+
+body .input-box:focus {
+    outline: none;
+}
+
+body #stylised-box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 1% auto;
+    padding: 150px 125px 150px 125px;
+    clear: both;
+    border: 1px solid white;
+}
+
+#results_box {
+    background-color: rgb(0, 0, 110);
+    color: grey;
+    font-size: 75%;
+    resize: none;
+    outline: none;
+    width: 95%;
+    height: 150px;
+    margin: auto;
+    text-align: left;
+    padding: 5px;
+}
+
+button {
+    display: block;
+    clear: both;
+    padding: 2%;
+    margin: 1% auto;
+    background-color: rgb(30, 5, 76);
+    color: rgb(1, 175, 255);
+    border: 4px ridge blue;
+}
+
+button:hover {
+    background-color: rgba(1, 175, 255, 0.1);
+}
+
+button:active {
+    border-style: groove;
+}

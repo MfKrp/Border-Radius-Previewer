@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Vinculo a la hoja de estilos en cascada-->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Se vinculan las fuentes que se van a usar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+    
+    <title>Border Radius Previewer</title>
+</head>
+<body>
+    <header><h1>Border Radius Previewer</h1></header>
+    <div class="general-container">
+        <div class="upper-row">
+            <input type="text" class="input-box" id="upper-left-side" placeholder="0" onkeypress="return filterCharacters(event)" maxlength="3">
+            <input type="text" class="input-box" id="upper-right-side" placeholder="0" onkeypress="return filterCharacters(event)" maxlength="3">
+        </div>
+        <div id="stylised-box"><textarea name="results" id="results_box" cols="30" rows="10" placeholder="nothing modified" readonly></textarea></div>
+        <div class="lower-row">
+            <input type="text" class="input-box" id="lower-left-side" placeholder="0" onkeypress="return filterCharacters(event)" maxlength="3">
+            <input type="text" class="input-box" id="lower-right-side" placeholder="0" onkeypress="return filterCharacters(event)" maxlength="3">
+        </div>
+        <button id="copyButton">Copy to the clipboard</button>
+    </div>
+</body>
+</html>
